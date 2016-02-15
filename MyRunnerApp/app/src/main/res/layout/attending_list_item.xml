@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/attending_list_circleView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/default_profile_pic"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/attending_list_name"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan Kowalski"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        />
+
+</LinearLayout>

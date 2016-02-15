@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/chat_list_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_go_back"
+            android:layout_margin="5dp"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_profile_circleView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/default_profile_pic"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/chat_list_header_name"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="Jan Kowalski"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1">
+    <ListView
+        android:id="@+id/chat_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stackFromBottom="true"
+        >
+    </ListView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:layout_marginTop="10dp"
+        android:background="#729BE0">
+
+        <EditText
+            android:id="@+id/activity_chat_send_et"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/activity_chat_send_tv"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Send"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

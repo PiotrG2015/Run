@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/drawer_header_bg"
+        android:weightSum="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile_picture"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/my_profile_circleView"
+            />
+
+
+    <LinearLayout
+        android:id="@+id/my_profile_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/my_profile_circleView"
+        android:layout_toRightOf="@+id/my_profile_circleView">
+
+        <TextView
+            android:id="@+id/my_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#ffffff"
+            android:text="Jan Kowalski"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/my_profile_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="Mileage: 25 km"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:id="@+id/my_profile_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Sex: male"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:id="@+id/my_profile_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="Age: 21"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+    <ListView
+    android:id="@+id/my_profile_listView"
+    android:layout_below="@id/my_profile_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+
+    </ListView>
+</LinearLayout>

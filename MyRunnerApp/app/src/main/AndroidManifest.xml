@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.piotrgorczyca.myrunnerapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".RunnerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_main_runner"
+        android:label="Run!"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="Run!"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:label="Sign up"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="Sign in"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:label="Chat"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:label="Profile"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".Activities.CreateTrainingActivity"
+            android:label="Create training"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".Activities.AddCommentActivity"
+            android:label="Comment"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".Activities.TrainingPageActivity"
+            android:label="Training"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

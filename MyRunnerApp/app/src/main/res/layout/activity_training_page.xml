@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/profile_bg_pic"
+        android:layout_weight="0"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_training_page_circleView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/default_profile_pic"
+                />
+
+            <TextView
+                android:id="@+id/activity_training_page_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Jan Kowalski"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/activity_training_page_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:text="Al. 3 maja 5"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/activity_training_page_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ffffff"
+                android:text="16 km"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/activity_training_page_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="2015-03-12 13:30"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+<!--                                 END OF HEADER                            -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/activity_training_page_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stackFromBottom="true">
+        </ListView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#729BE0"
+        android:layout_weight="0"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/activity_training_page_go_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_go_back"
+            android:layout_weight="1"
+            />
+
+
+        <TextView
+            android:id="@+id/activity_training_page_join_tv"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Join!"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>
